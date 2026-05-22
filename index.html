@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/newcss.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body oncontextmenu="return false">
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Zaki Haider</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i>Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="uil uil-briefcase nav__icon"></i>Experience
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#qualification" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="uil uil-scenery nav__icon"></i>Projects
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i>Contact-Me
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <!-- Theme change button -->
+        <button class="change-theme" id="theme-button" type="button" aria-label="Toggle theme" onclick="toggleTheme()">
+          <i class="uil uil-moon"></i>
+        </button>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- main-->
+
+  <main class="main">
+    <!--========================= Home =====================-->
+
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid" data-aos="fade-up">
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/zaki-haider-b36849318/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt home__icon"></i>
+            </a>
+
+            <a href="https://github.com/Zakihayder" target="_blank" class="home__social-icon">
+              <i class="uil uil-github-alt home__icon"></i>
+            </a>
+          </div>
+          <div class="home__img">
+            <div class="home__photo-frame">
+              <div class="home__photo-glow"></div>
+              <img class="home__photo" src="assets/img/Pro.png" alt="Portrait of Zaki Haider" />
+            </div>
+          </div>
+          <div class="home__data">
+            <p class="home__eyebrow">Software Engineering student at FAST-NUCES</p>
+            <h1 class="home__title">Hi, I’m <span>Zaki Haider</span></h1>
+            <h3 class="home__subtitle">
+              AI + Full-Stack Web Developer
+            </h3>
+            <p class="home__description">
+              I build scalable web products and intelligent AI systems, with a focus on practical engineering,
+              strong product thinking, and real-world impact.
+            </p>
+            <div class="home__badges">
+              <span class="home__badge">AI Engineering</span>
+              <span class="home__badge">Full-Stack Web</span>
+              <span class="home__badge">FAST-NUCES</span>
+            </div>
+            <a href="#contact" class="button button--flex">
+              Contact me<i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--======================= About========================-->
+
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My introduction</span>
+
+      <div class="about__container container grid" data-aos="fade-up">
+        <img src="assets/img/about.jpg" alt="About Zaki Haider" class="about__img" />
+
+        <div class="about__data">
+          <p class="about__description">
+            Final-year Software Engineering student at FAST-NUCES with hands-on experience in both web development and
+            AI. I like building production-minded products that combine clean interfaces, dependable backend systems,
+            and practical machine learning features. My goal is to keep growing as an engineer who can ship useful web
+            platforms and intelligent systems with equal confidence.
+          </p>
+
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">3.1+</span>
+              <span class="about__info-name">CGPA</span>
+            </div>
+
+            <div>
+              <span class="about__info-title">AI + Web</span>
+              <span class="about__info-name">Core focus</span>
+            </div>
+
+            <div>
+              <span class="about__info-title">FAST</span>
+              <span class="about__info-name">NUCES</span>
+            </div>
+          </div>
+
+          <div class="about__buttons">
+            <a download="" href="assets/MyCV.pdf" class="button button--flex">
+              Download CV<i class="fas fa-download button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===================== SKILLS =====================-->
+
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My technical level</span>
+
+      <div class="skills__container container grid" data-aos="fade-up">
+        <div>
+          <!--==================== Skill 1 =================-->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="fas fa-code skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Programming Languages</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python, JavaScript, C++, Java</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">SQL, HTML5, CSS3</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Problem Solving, OOP, DSA</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Skill 2 =================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="fas fa-layer-group skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Frontend & Full-Stack</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React.js, Next.js, MERN Stack</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML5, CSS3, Responsive Design</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Node.js, Express.js, REST APIs</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">WebSocket / Socket.IO, JWT, RBAC</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Django, CI/CD Pipelines</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!--==================== Skill 3 =================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="fas fa-brain skills__icon"></i>
+              <div>
+                <h1 class="skills__title">AI & Machine Learning</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Machine Learning, Deep Learning</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Computer Vision, OpenCV, MediaPipe</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">NLP, Generative AI, Diffusion Models</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CNNs, Vision Transformers, RAG</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PyTorch, TensorFlow, Scikit-learn</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Skill 4 =================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="fas fa-database skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Databases & Platforms</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">MongoDB, MySQL, SQLite</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PostgreSQL, SQL Server, ChromaDB</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">NocoDB, Database Design, 3NF</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Skill 5 =================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="fas fa-tools skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Tools & Automation</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Git/GitHub, VS Code, Postman</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Jupyter Notebook, Cypress, Docker</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">n8n, Streamlit, Flask</h3>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Google Meet / Zoom APIs, Slack integrations</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===================== Experience =====================-->
+    <section class="experience section" id="experience">
+      <h2 class="section__title">Experience</h2>
+      <span class="section__subtitle">Work history that backs the resume</span>
+
+      <div class="experience__container container">
+        <div class="experience__intro" data-aos="fade-up">
+          <div>
+            <p class="experience__eyebrow">Selected roles</p>
+            <h3 class="experience__headline">Hands-on AI and web work across research, product, and systems building.</h3>
+          </div>
+          <p class="experience__summary">
+            My experience combines research-style AI work, modern full-stack development, and real deployment-minded
+            projects. That mix makes the profile more credible for both AI internships and web development internships.
+          </p>
+        </div>
+
+        <div class="experience__timeline" data-aos="fade-up">
+          <article class="experience__card experience__card--highlight">
+            <div class="experience__card-header">
+              <div>
+                <p class="experience__role">Summer Intern - AI, ML & Computer Vision</p>
+                <h3 class="experience__company">Knowledge Discovery and Data Science Lab, FAST-NUCES</h3>
+              </div>
+              <span class="experience__period">Jun 2025 - Aug 2025</span>
+            </div>
+            <ul class="experience__list">
+              <li>Built an end-to-end deep learning pipeline for text-to-image generation on 100,000+ samples.</li>
+              <li>Worked with diffusion-based models, CNNs, and Vision Transformers for image synthesis tasks.</li>
+              <li>Optimized architecture and hyperparameters to improve output quality and model efficiency.</li>
+            </ul>
+          </article>
+
+          <article class="experience__card">
+            <div class="experience__card-header">
+              <div>
+                <p class="experience__role">Full-Stack Developer - Module Lead</p>
+                <h3 class="experience__company">National Freelance Platform</h3>
+              </div>
+              <span class="experience__period">2024 - 2025</span>
+            </div>
+            <ul class="experience__list">
+              <li>Led the collaboration and workspace module in a large cross-functional team project.</li>
+              <li>Built the frontend in React.js / Next.js and backend services in Node.js / Express.</li>
+              <li>Delivered task boards, real-time chat, file repository, meeting hub, and RBAC workflows.</li>
+            </ul>
+          </article>
+
+          <article class="experience__card">
+            <div class="experience__card-header">
+              <div>
+                <p class="experience__role">Practical Computer Vision with PyTorch</p>
+                <h3 class="experience__company">openHPI - Hasso Plattner Institute</h3>
+              </div>
+              <span class="experience__period">May 2025</span>
+            </div>
+            <ul class="experience__list">
+              <li>Implemented CNNs, Vision Transformers, and diffusion-based models in PyTorch.</li>
+              <li>Strengthened hands-on understanding of computer vision model design and deployment patterns.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== Qualifications ==================-->
+
+    <section class="qualification__section service__section" id="qualification">
+      <h2 class="section__title">Qualification</h2>
+      <span class="section__subtitle">My personal journey</span>
+
+      <div class="qualification__container container grid services__container" data-aos="fade-up">
+        <div class="qualification__tabs">
+          <div class="qualification__button button--flex qualification__active" data-target="#education">
+            <i class="uil uil-graduation-cap qualification__icon"></i>
+            Education
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!--====== Qualification Content 1 ======-->
+          <div class="qualification__content qualifiation__active services__content" data-content id="education">
+            <!--====== Qualification 1 ======-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">SSC</h3>
+                <span class="qualification__subtitle">F.I.C<br />Inter College</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  - 2021
+                </div>
+                <span class="button button--flex button--small button--link services__button">
+                  View More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </span>
+                <div class="services__modal">
+                  <div class="services__modal-content">
+                    <h4 class="services__modal-title">Class 10th Summary</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+                    <ul class="services__modal-services grid">
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__moda-icon"></i>
+                        <p>
+                          Subjects studied: Physics, Chemistry, Maths,
+                          English, Urdu, computer Science, Islamiat.
+                        </p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__moda-icon"></i>
+                        <p>Scored 95.45%</p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__moda-icon"></i>
+                        <p>Came winner in inter-school BasketBall</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--====== Qualification 2 ======-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">HSSC</h3>
+                <span class="qualification__subtitle">F.I.C<br />Inter College</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  - 2023
+                </div>
+                <span class="button button--flex button--small button--link services__button">
+                  View More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </span>
+                <div class="services__modal">
+                  <div class="services__modal-content">
+                    <h4 class="services__modal-title">Class 12th Summary</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+                    <ul class="services__modal-services grid">
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__moda-icon"></i>
+                        <p>
+                          Subjects studied: physics, chemistry, Maths, English,
+                          Pakistan Studies, Islamiat, Urdu.
+                        </p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__moda-icon"></i>
+                        <p>Scored 87.5%</p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__moda-icon"></i>
+                        <p>Came winner in HSSC VolleyBall and Highjump</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--====== Qualification 3 ======-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">University</h3>
+                <span class="qualification__subtitle">FAST-NUCES, Islamabad | CGPA 3.1+</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  2023 - 2027
+                </div>
+                <span class="button button--flex button--small button--link services__button">
+                  View More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </span>
+                <div class="services__modal">
+                  <div class="services__modal-content">
+                    <h4 class="services__modal-title">University Summary</h4>
+                    <i class="uil uil-times services__modal-close"></i>
+                    <ul class="services__modal-services grid">
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__modal-icon"></i>
+                        <p>Summer Intern - AI, ML & Computer Vision at Knowledge Discovery and Data Science Lab.</p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__modal-icon"></i>
+                        <p>1st Position, App Development - SOFTEC (FAST Lahore).</p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__modal-icon"></i>
+                        <p>Winner, University-Wide AI Hackathon - SES Society.</p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__modal-icon"></i>
+                        <p>4-Time Teaching Assistant at FAST-NUCES Islamabad.</p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__modal-icon"></i>
+                        <p>Practical Computer Vision with PyTorch Trainee - openHPI.</p>
+                      </li>
+                      <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__modal-icon"></i>
+                        <p>AWS Certified: Fundamentals of Machine Learning and AI.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <!--<span class="qualification__line"></span>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=================== Portfolio ===================-->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Projects</h2>
+      <span class="section__subtitle">Most recent work</span>
+
+      <div class="portfolio__container container swiper-container" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <!-- ------------------------portfollio 1---------------------->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/freelance-platform.png" class="portfolio__img" alt="National Freelance Platform" />
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">National Freelance Platform</h3>
+              <p class="portfolio__description">
+                Built the collaboration and team workspace module for a national-scale freelance platform with task
+                boards, real-time chat, file sharing, meeting links, and role-based access control.
+              </p>
+              <a href="https://www.linkedin.com/posts/uzair-majeed-605611319_softwareengineering-projectmanagement-reactjs-ugcPost-7456970567749910529-nSfD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF927xQBun1pNSKNltHR4yyb-UoUUmaaB30"
+                class="button button--flex button--small portfolio__button">
+                LinkedIn Post
+                <i class="uil uil-external-link-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ------------------------portfollio 2-------------------- -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/smartmail.png" class="portfolio__img" alt="SmartMail project" />
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">SmartMail - Intelligent Email Insights</h3>
+              <p class="portfolio__description">
+                Built an email intelligence platform that ingests inbox data, extracts structured information, and
+                surfaces urgency, deadlines, and action items through a clear analytics dashboard.
+              </p>
+              <a href="https://www.linkedin.com/posts/zaki-haider-b36849318_datascience-processmining-publictransit-activity-7459613233671356416-QMQk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF927xQBun1pNSKNltHR4yyb-UoUUmaaB30"
+                class="button button--flex button--small portfolio__button">
+                LinkedIn Post
+                <i class="uil uil-external-link-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ------------------------portfollio 3-------------------- -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/career-connect.png" class="portfolio__img" alt="Career Connect project" />
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Career Connect - Job Fair Management</h3>
+              <p class="portfolio__description">
+                Designed a 3NF-normalized SQL Server system and desktop application with multi-role access,
+                real-time check-ins, and an admin dashboard for placement and interview analytics.
+              </p>
+              <a href="https://www.linkedin.com/posts/zaki-haider-b36849318_ai-geneticalgorithm-scheduling-activity-7457452709802323968-Gmaj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF927xQBun1pNSKNltHR4yyb-UoUUmaaB30"
+                class="button button--flex button--small portfolio__button">
+                LinkedIn Post
+                <i class="uil uil-external-link-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ------------------------portfolio 4-------------------- -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/gesture-drawing.png" class="portfolio__img" alt="Gesture-controlled drawing app" />
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Gesture-Controlled Drawing App</h3>
+              <p class="portfolio__description">
+                Developed a real-time hand-tracking application using MediaPipe and OpenCV for webcam-based drawing,
+                shape recognition, and gesture-driven interface controls.
+              </p>
+              <a href="https://www.linkedin.com/posts/zaki-haider-b36849318_computervision-python-opencv-activity-7347280794379247617-vk_Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF927xQBun1pNSKNltHR4yyb-UoUUmaaB30"
+                class="button button--flex button--small portfolio__button">
+                LinkedIn Post
+                <i class="uil uil-external-link-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ------------------------portfolio 5-------------------- -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/timetable-generator.png" class="portfolio__img" alt="Automatic timetable generator" />
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Automatic University Timetable Generator</h3>
+              <p class="portfolio__description">
+                Built an optimization-based scheduling system with genetic algorithms to resolve room, faculty, and
+                time-slot conflicts across hard and soft constraints.
+              </p>
+              <a href="https://www.linkedin.com/posts/zaki-haider-b36849318_databaseproject-careerconnect-sql-activity-7335270278937165825-0dvk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF927xQBun1pNSKNltHR4yyb-UoUUmaaB30"
+                class="button button--flex button--small portfolio__button">
+                LinkedIn Post
+                <i class="uil uil-external-link-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ------------------------portfolio 6-------------------- -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/transit-analyser.png" class="portfolio__img" alt="Transit route analyser" />
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">CDA Transit Route Analyser</h3>
+              <p class="portfolio__description">
+                Created a route analysis tool that combines real bus route maps, event-log analysis, and chatbot-based
+                travel assistance to suggest optimized trips.
+              </p>
+              <a href="https://github.com/Zakihayder" class="button button--flex button--small portfolio__button">
+                GitHub
+                <i class="uil uil-external-link-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ------------------------portfolio 7-------------------- -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/workout-platform.png" class="portfolio__img" alt="Workout management platform" />
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Workout Management Platform</h3>
+              <p class="portfolio__description">
+                Designed a scalable workout tracking system using OOP principles, allowing users and trainers to create
+                personalized plans and monitor performance metrics through a user-friendly interface.
+              </p>
+              <a href="https://github.com/Zakihayder" class="button button--flex button--small portfolio__button">
+                GitHub
+                <i class="uil uil-external-link-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- add arrows -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <!-- add pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--===================== Contact Me =====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+
+      <div class="contact__container container grid" data-aos="fade-up">
+        <div class="contact__panel">
+          <div class="contact__information">
+            <i class="uil uil-calling contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Contact Me</h3>
+              <span class="contact__subtitle"><a href="tel:+923440503800">+92 344 050 3800</a></span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-envelope-minus contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle"><a href="mailto:zakihaider7860@gmail.com">zakihaider7860@gmail.com</a></span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">H-8/4, Islamabad, Pakistan</span>
+            </div>
+          </div>
+
+          <div class="contact__note">
+            Open to AI engineering, web development, internships, and collaborative product work.
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/xqejbynv" method="POST" class="contact__form grid">
+          <input type="hidden" name="_subject" value="Portfolio message from website" />
+          <input type="hidden" name="_next" value="./?sent=1" />
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="name" class="content__label">Name</label>
+              <input type="text" name="name" class="contact__input" required />
+            </div>
+
+            <div class="contact__content">
+              <label for="email" class="content__label">Email</label>
+              <input type="email" name="email" class="contact__input" required />
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <label for="message" class="content__label">Message</label>
+            <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="button button--flex">
+              Send Message
+              <i class="uil uil-message button__icon"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- contact status (shown after redirect from Formspree) -->
+        <div id="contact-status" class="contact__status" style="display:none;" aria-live="polite"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!--================== Footer ===============-->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Zaki Haider</h1>
+          <span class="footer__subtitle">AI + Full-Stack Web Developer</span>
+        </div>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#experience" class="footer__link">Experience</a>
+          </li>
+          <li>
+            <a href="#qualification" class="footer__link">Qualification</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contact-Me</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/zaki-haider-b36849318/" class="footer__social" target="__blank">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+
+          <a href="https://github.com/Zakihayder" class="footer__social" target="__blank">
+            <i class="uil uil-github-alt"></i>
+          </a>
+
+          <a href="https://www.instagram.com/zaki_haider466/" class="footer__social" target="__blank">
+            <i class="uil uil-instagram"></i>
+          </a>
+
+          <a href="https://twitter.com/zaki_haider" target="__blank" class="footer__social">
+            <i class="uil uil-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; 2026 Zaki Haider. Designed to showcase AI engineering, web development, and product work.</p>
+    </div>
+  </footer>
+
+  <!--================== SCROLL TOP ==================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+  <script>
+    window.toggleTheme = function () {
+      document.body.classList.toggle('light-theme');
+      const icon = document.querySelector('#theme-button i');
+      if (icon) {
+        icon.classList.toggle('uil-sun');
+        icon.classList.toggle('uil-moon');
+      }
+    };
+  </script>
+  <script src="assets/ptj.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+
+</html>
