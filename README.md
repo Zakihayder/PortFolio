@@ -1,70 +1,128 @@
 
 # Personal Portfolio Website
 
-This repository is a static portfolio site built with HTML, CSS and JavaScript. It showcases projects, skills, experience, and includes a contact form (wired to Formspree).
+# Personal Portfolio — Zaki Haider
 
-## What to push to GitHub
+This repository contains a static personal portfolio website that showcases projects, skills, and experience. It is implemented with plain HTML, CSS and JavaScript and is intended to be deployed as a static site (for example on GitHub Pages or Netlify). The contact form is configured to use Formspree for email delivery.
+
+## Table of contents
+- [Features](#features)
+- [Tech stack](#tech-stack)
+- [Repository contents](#repository-contents)
+- [Local preview](#local-preview)
+- [Deploying](#deploying)
+- [Contact form (Formspree)](#contact-form-formspree)
+- [Tips & security](#tips--security)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+- Home: hero section with profile, title and badges.
+- About: short bio, education (CGPA), and stat cards.
+- Skills: accordion-style grouped skills (Programming, Frontend, AI/ML, Databases, Tools).
+- Experience & Qualification: timeline and education modal details.
+- Projects: horizontal, swipeable project carousel with images and links.
+- Contact: contact information and a form (wired to Formspree) that forwards messages to your email.
+- Theme toggle (dark/light) and AOS entry animations.
+
+## Tech stack
+- HTML, CSS (assets/newcss.css)
+- JavaScript (assets/ptj.js)
+- Images and resume PDFs in `assets/`
+
+## Repository contents
+Recommended files/folders to push to GitHub:
+
 - `index.html`
-- `assets/` (includes `newcss.css`, `ptj.js`, `MyCV.pdf`, and the `img/` folder)
-	- `assets/img/` contains: `about.jpg`, `car.png`, `career-connect.png`, `freelance-platform.png`, `gesture-drawing.png`, `pacman.png`, `Pro.jpg`, `Pro.png`, `smartmail.png`, `timetable-generator.png`, `transit-analyser.png`, `workout-platform.png`
-- `README.md`
-- `fix_aos.py`, `modify_cssjs.py`, `modify_html.py` (utility scripts, optional)
-- `Resume-Zaki.pdf`, `Zaki-Haider_Resume.pdf`
+- `assets/`
+	- `assets/newcss.css` — styles
+	- `assets/ptj.js` — frontend scripts
+	- `assets/MyCV.pdf` — downloadable CV
+	- `assets/img/` — project and profile images (see list below)
+- `README.md` (this file)
+- `Resume-Zaki.pdf`, `Zaki-Haider_Resume.pdf` (reference PDFs)
+- utility scripts (optional): `fix_aos.py`, `modify_cssjs.py`, `modify_html.py`
 
-Do NOT push: the local Python virtual environment folder `.venv/`. Add a `.gitignore` with at least the line:
+Contents of `assets/img/` (present in this repo):
+`about.jpg`, `car.png`, `career-connect.png`, `freelance-platform.png`, `gesture-drawing.png`, `pacman.png`, `Pro.jpg`, `Pro.png`, `smartmail.png`, `timetable-generator.png`, `transit-analyser.png`, `workout-platform.png`
+
+Files/folders to ignore (do not push):
+- `.venv/` (local Python virtual environment)
+
+Create a `.gitignore` with at least:
 
 ```
 .venv/
+.DS_Store
+node_modules/
 ```
 
-## Quick local preview
-- Open `index.html` in your browser (double-click or `Open File`) to preview locally. Some features (forms, theme persistence) work offline; server-side form delivery requires deployment.
+## Local preview
+1. Clone or copy the project to your machine.
+2. Open `index.html` in your browser to preview. No build step is required.
 
-## Contact form (Formspree)
-- The site is already configured to use Formspree. The contact form posts to:
+Notes:
+- Some integrations (server-side email delivery, serverless functions) require deployment to a hosting provider. The Formspree contact form works after you verify your email in Formspree.
 
-	`https://formspree.io/f/xqejbynv`
+## Deploying
+Two simple free hosting options are recommended:
 
-- Steps to activate and test:
-	1. Sign in to Formspree and verify the email address they send you for the form.
-	2. Deploy the site (see GitHub Pages below) or test the form from a local file — Formspree accepts form POSTs from deployed sites.
-	3. Submit the form — Formspree will forward messages to your verified email and then redirect the browser to `./?sent=1` as configured.
+### Option A — GitHub Pages (static, free)
+1. Create a GitHub repo (or use the existing `https://github.com/Zakihayder/PortFolio`).
+2. Push the project to the `main` branch.
+3. In the repository Settings → Pages, set the source to `main` branch (root) and save.
+4. Wait a minute — your site will be available at `https://<your-username>.github.io/<repo>/`.
 
-## Deploy to GitHub Pages (free, recommended)
-1. Create a GitHub repository and push this project to it:
+Example commands:
 
 ```bash
 git init
 git add .
-git commit -m "Initial portfolio commit"
-git branch -M main
+git commit -m "Initial portfolio"
 git remote add origin https://github.com/<your-username>/<repo>.git
+git branch -M main
 git push -u origin main
 ```
 
-2. On GitHub: Settings → Pages → Source: `main` branch, folder `/ (root)` → Save.
-3. After a minute your site will be live at `https://<your-username>.github.io/<repo>/`.
+### Option B — Netlify (drag & drop or Git)
+- Drag & drop the project folder at https://app.netlify.com/drop for a one-click deploy.
+- Or connect your GitHub repository for continuous deploys.
+- Netlify also supports form handling and serverless functions if you later switch from Formspree.
 
-Notes:
-- If you prefer drag-and-drop deploys and built-in form handling, Netlify is another free option (drag & drop the site folder at app.netlify.com/drop).
-- If you want to use serverless email (SendGrid, etc.) instead of Formspree, I can add a Vercel/Netlify function and instruct how to set env vars.
-
-## Add a `.gitignore` (recommended)
-Create a `.gitignore` file in the repo root with:
+## Contact form (Formspree)
+This site is pre-configured to use Formspree. Current endpoint:
 
 ```
-.venv/
-# macOS
-.DS_Store
-# Node (if you ever add)
-node_modules/
+https://formspree.io/f/xqejbynv
 ```
+
+Steps to activate and test:
+1. Sign in or create a free Formspree account.
+2. Verify your email address when Formspree sends the confirmation message.
+3. Submit the contact form on the deployed site — Formspree will forward messages to your verified address.
+4. The site is configured to redirect to `./?sent=1` (success) or `./?sent=0` (failure). A small status message will appear in the Contact section after redirect.
+
+If you prefer full control, you can replace Formspree with:
+- a self-hosted PHP endpoint using PHPMailer + SMTP, or
+- a serverless function (Vercel/Netlify) that calls an email provider API (SendGrid, Mailgun, Postmark).
+
+## Tips & security
+- Do NOT store API keys, SMTP passwords, or other secrets in repository files. Use environment variables in serverless functions or your hosting provider's secret store.
+- Add basic spam protection (honeypot field or reCAPTCHA) if you receive spam through the form.
+- Test the contact form end-to-end after deployment — Formspree requires the origin to be deployed to forward messages reliably.
+
+## Contributing
+- This repository is yours. If you want me to make further refinements (styling, animations, deploy automation), tell me what to change and I will apply it.
+
+## License
+This repository has no license file by default. If you want a permissive license, I can add an `MIT` license file for you.
 
 ---
 If you want, I can:
-- create/update `.gitignore` and commit it,
-- add a short success/failure message UI when the form redirects (`?sent=1`),
-- or push the repo to GitHub and enable Pages for you (you'll need to provide your GitHub username and repo name or grant access).
+- add a styled success banner (CSS) for the contact status message,
+- add `.github/workflows` with a simple deploy action, or
+- add a small `deploy.sh` that automates pushing and enabling Pages (you will still need to enable Pages in GitHub settings).
+
 
 
 
