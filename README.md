@@ -3,6 +3,7 @@
 
 # Personal Portfolio — Zaki Haider
 
+Live demo: https://zakihayder.github.io/PortFolio
 This repository contains a static personal portfolio website that showcases projects, skills, and experience. It is implemented with plain HTML, CSS and JavaScript and is intended to be deployed as a static site (for example on GitHub Pages or Netlify). The contact form is configured to use Formspree for email delivery.
 
 ## Table of contents
